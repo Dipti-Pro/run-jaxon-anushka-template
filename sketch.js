@@ -33,20 +33,7 @@ rightBoundary.visible = false;
 
 function draw() {
   background(0);
-  path.velocityY = 4;
   
-  // boy moving on Xaxis with mouse
-  boy.x = World.mouseX;
-  
-  edges= createEdgeSprites();
-  boy.collide(edges[3]);
-  boy.collide(leftBoundary);
-  boy.collide(rightBoundary);
-  
-  //code to reset the background
-  if(path.y > 400 ){
-    path.y = height/2;
-  }
   
   drawSprites();
 }
